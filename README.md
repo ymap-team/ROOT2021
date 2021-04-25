@@ -10,8 +10,13 @@ YMAP イベントページ http://www.icrr.u-tokyo.ac.jp/YMAP/event/root2021/ind
 
 ## 参加方法
 
-まず、2020年度ROOT講習会 登録フォーム にて登録をお願いします。その後、連絡用チャットツールSlackへ招待します。講習会は、ビデオ会議Zoomを使って行い、講習会中を含めた質問等の受付はSlackを通じて行います。Zoomの配信情報はどなたでも確認いただけますが、質問等は全てSlack内で行いますので、必要な方は必ず登録をお願いします。
+まず、2021年度ROOT講習会 登録フォーム にて登録をお願いします。その後、連絡用チャットツールSlackへ招待します。講習会は、ビデオ会議Zoomを使って行い、講習会中を含めた質問等の受付はSlackを通じて行います。Zoomの配信情報はどなたでも確認いただけますが、質問等は全てSlack内で行いますので、必要な方は必ず登録をお願いします。
 Wikiをご参照ください. [Wiki](https://github.com/ymap-team/ROOT2021/wiki)
+
+また, ROOT講習会第1回までにROOTのインストールをお願いします。
+それぞれの環境へのインストールガイドはこちらです.[MacOS](https://github.com/ymap-team/ROOT2021/wiki/Install_ROOT_Intel_Mac), [Windows](https://github.com/ymap-team/ROOT2021/wiki/Install_ROOT_Windows-Ubuntu-20.04)
+うまくいかなければ, Slackの`#質問` チャンネルで質問してください。
+また、第0回で、インストールについて解説します。
 
 ## 日程
 
