@@ -1,13 +1,10 @@
 {
-  TH2D *h2 = new TH2D("h2","h2", 50,-1,1, 50,-1,1);
-  for(int i=0; i<10000; i++){
-    double costheta = gRandom->Uniform(-1,1);
-    double phi = gRandom->Uniform(0,2*TMath::Pi());
-    double theta = TMath::ACos(costheta);
-    double x = TMath::Cos(phi)*TMath::Sin(theta);
-    double y = TMath::Sin(phi)*TMath::Sin(theta);
-    double z = costheta;
-    h2->Fill(x,y);
-  }
+  TH2D *h2 = new TH2D("h2","Sendai, May, 2021;nisshou h;kion deg", 13,0,13, 11,11,22);
+  ifstream ifs("tenki.dat");
+  TString dummy;
+  ifs >> dummy >> dummy;
+  double x, y;
+  while(ifs >> y >> x) h2->Fill(x, y);
   h2->Draw("COLZ");
+  //h2->Draw("LEGO");
 }

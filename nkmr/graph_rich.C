@@ -21,11 +21,12 @@
   g[0]->SetPoint(1, 2.5, 106);
   g[0]->SetPoint(2, 3.5, 1777);
   g[1]->SetPoint(0, 1.5, 2.16);
-  g[1]->SetPoint(1, 2.5, 93);
-  g[1]->SetPoint(2, 3.5, 4.18e3);
+  g[1]->SetPoint(1, 2.5, 1.27e3);
+  g[1]->SetPoint(2, 3.5, 172.76e3);
   g[2]->SetPoint(0, 1.5, 4.67);
-  g[2]->SetPoint(1, 2.5, 1.27e3);
-  g[2]->SetPoint(2, 3.5, 172.76e3);
+  g[2]->SetPoint(1, 2.5, 93);
+  g[2]->SetPoint(2, 3.5, 4.18e3);
+
   int color[4] = {2,3,4,6}, style[4] = {8, 22, 23, 4};
   for(int i=0; i<4; i++){
     g[i]->SetMarkerColor(color[i]);
@@ -36,8 +37,8 @@
   }
 
   TLegend *leg = new TLegend(0.5,0.35,0.8,0.5);
-  leg->AddEntry(g[2],"quark(d-type)","P");
   leg->AddEntry(g[1],"quark(u-type)","P");
+  leg->AddEntry(g[2],"quark(d-type)","P");
   leg->AddEntry(g[0],"lepton","P");
   leg->AddEntry(g[3],"neutrino","P");
   leg->SetFillColor(0);
@@ -46,13 +47,13 @@
   TLatex *latex[9];
   latex[0] = new TLatex(1.5+0.2,    0.511,"e");
   latex[1] = new TLatex(2.5+0.2,      106,"#mu");
-  latex[2] = new TLatex(3.5+0.2, 0.1*1777,"#tau");
+  latex[2] = new TLatex(3.5+0.2, 0.5*1777,"#tau");
   latex[3] = new TLatex(1.5+0.2,     2.16,"u");
-  latex[4] = new TLatex(2.5+0.2,   0.1*93,"s");
-  latex[5] = new TLatex(3.5+0.2,   4.18e3,"b");
-  latex[6] = new TLatex(1.5+0.2,  10*4.67,"d");
-  latex[7] = new TLatex(2.5+0.2,   1.27e3,"c");
-  latex[8] = new TLatex(3.5+0.2, 172.76e3,"t");
+  latex[4] = new TLatex(2.5+0.2,   1.27e3,"c");
+  latex[5] = new TLatex(3.5+0.2, 172.76e3,"t");
+  latex[6] = new TLatex(1.5+0.2,   2*4.67,"d");
+  latex[7] = new TLatex(2.5+0.2,   0.3*93,"s");
+  latex[8] = new TLatex(3.5+0.2,   4.18e3,"b");
   for(int i=0; i<9; i++){
     latex[i]->SetTextColor(color[(int)(i/3)]);
     latex[i]->Draw();
